@@ -1,0 +1,333 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/common.js"></script>
+  <title>Госуслуги</title>
+</head>
+<body>
+    <header class="sg-header">
+      <div class="sg-header__container">
+        <a href="/" class="sg-header__logo">
+          <img class="sg-img" src="images/logo-penza.jpg" alt="Госуслуги">
+        </a>
+        <div class="sg-header__user">
+          <a class="sg-link sg-header__link" href="/">Иванов И.И.</a>
+        </div>
+      </div>
+    </header>
+    
+      <nav class="sg-breadcrumbs">
+        <div class="sg-breadcrumbs__container">
+          <div class="sg-breadcrumbs__logo">
+            <img src="images/home-icon.png" alt="">
+          </div>
+          <div class="sg-breadcrumbs__item">
+            <a class="sg-breadcrumbs__link" href="/">Главная</a>
+          </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link sg-breadcrumbs__link--active" 
+                href=index.html>
+                  Реестр земельных участков
+            </a>
+            </div>
+            
+        </div>
+      </nav>
+    
+    <div class="sg-container">
+      
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/reestr.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Реестр земельных <br> участков</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/process.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Процесс</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/otchet.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Отчётность</p>
+    </div>
+  </a>
+</nav>
+  <section class="sg-main-container">
+    <section class="main-block index">
+      <div class="sg-page-title sg-page-title--btn">
+        <h1 class="sg-title-text">
+          Реестр земельных участков
+        </h1>
+        <div class="sg-title-btn">
+          <button class="sg-btn">Загрузить файл</button>
+          <button class="sg-btn">Добавить</button>
+        </div>
+      </div>
+      <div class="form-block">
+        <form class="sg-form-block__container">
+          <div class="sg-form__item sg-item1">
+            <div id="sg-form1" class="sg-item__container">
+              <label class="sg-label-select">
+                <span class="sg-label-select__hint">Статус</span>
+                <select id="select_status" class="sg-menu__select sg-select" name="status">
+                  <option></option>
+                  <option value="status_1">Статус 1</option>
+                  <option value="status_2">Статус 2</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="sg-form__item sg-item2">
+            <div id="sg-form2" class="sg-item__container">
+              <label class="sg-label" for="">Адрес</label>
+              <input class="sg-input" type="text" placeholder="Район">
+              <input class="sg-input" type="text" placeholder="Населённый пункт">
+              <input class="sg-input" type="text" placeholder="Улица">
+              <input class="sg-input" type="text" placeholder="Дом">
+            </div>
+          </div>
+          <div class="sg-form__item sg-item4">
+            <div id="form4" class="sg-item__container">
+              <label class="sg-label" for="">Кадастровый номер</label>
+              <input class="sg-input sg-input--required" type="text">
+            </div>
+          </div>
+          <div class="sg-form__item sg-item5">
+            <div id="sg-form5" class="sg-item__container">
+              <label class="sg-label" for="">Кадастровая стоимость</label>
+              <input class="sg-input" type="text" placeholder="От">
+              <input class="sg-input" type="text" placeholder="До">
+            </div>
+          </div>
+          <div class="sg-form__item sg-item6">
+            <div id="sg-form5" class="sg-item__container">
+              <label class="sg-label" for="">Площадь</label>
+              <input class="sg-input sg-input--required" type="text" placeholder="От">
+              <input class="sg-input sg-input--required" type="text" placeholder="До">
+            </div>
+          </div>
+          <div class="sg-form__item sg-item1">
+            <div id="sg-form1" class="sg-item__container">
+              <label class="sg-label-select">
+                <span class="sg-label-select__hint">Категория земли</span>
+                <select class="sg-menu__select sg-select" name="category">
+                  <option></option>
+                  <option value="category_1">Категория 1</option>
+                  <option value="category_2">Категория 2</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="sg-form__item sg-item6">
+            <div id="form6" class="sg-item__container">
+              <label class="sg-label-select">
+                <span class="sg-label-select__hint">Разрешенное использование минэконом</span>
+                <select class="sg-menu__select sg-select" name="category">
+                  <option></option>
+                  <option value="mineconom_1">Разрешение 1</option>
+                  <option value="mineconom_2">Разрешение 2</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="sg-form__item sg-item6">
+            <div id="form6" class="sg-item__container">
+              <label class="sg-label-select">
+                <span class="sg-label-select__hint">Разрешенное использование Росреестр</span>
+                <select class="sg-menu__select sg-select" name="category">
+                  <option></option>
+                  <option value="rosereester_1">Разрешение 1</option>
+                  <option value="rosereester_2">Разрешение 2</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="sg-form__item sg-item3">
+            <div id="form3" class="sg-item__container">
+              <label class="toggle toggle--checkbox">
+							  <input class="toggle__input" name="in-work" type="checkbox" checked="">
+							  <span class="toggle__label">В работе</span>
+						  </label>
+            </div>
+          </div>
+        </form>
+
+        <div class="sg-btn-block">
+          <div class="sg-left-block">
+            <button class="sg-btn">Принять</button>
+            <button class="sg-btn">Сбросить</button>
+          </div>
+      </div>
+
+      <div class="sg-table">
+          <table>
+            <tr>
+              <th>№</th>
+              <th>Статус</th>
+              <th>Адрес</th>
+              <th>Кадастровый номер</th>
+              <th>Кадастровая стоимость</th>
+              <th>Площадь</th>
+              <th>Категория земли</th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>
+                Свободный
+              </td>
+              <td>Пензенская обл, Пензинский р-н,<br> с.Засечное, ул. Олимпийская, д. 50</td>
+              <td>40:40:003601:1258</td>
+              <td>100 000</td>
+              <td>1021</td>
+              <td>Земли населённых пунктов</td>
+              <td>
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
+              </td>
+            </tr>
+          </table>
+        </div>
+
+    </section>
+  </section>
+
+    </div>
+    <footer class="sg-footer">
+    </footer>
+</body>
+</html>

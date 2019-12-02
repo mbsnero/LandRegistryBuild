@@ -1,0 +1,536 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/common.js"></script>
+  <title>Госуслуги</title>
+</head>
+<body>
+    <header class="sg-header">
+      <div class="sg-header__container">
+        <a href="/" class="sg-header__logo">
+          <img class="sg-img" src="images/logo-penza.jpg" alt="Госуслуги">
+        </a>
+        <div class="sg-header__user">
+          <a class="sg-link sg-header__link" href="/">Иванов И.И.</a>
+        </div>
+      </div>
+    </header>
+    
+      <nav class="sg-breadcrumbs">
+        <div class="sg-breadcrumbs__container">
+          <div class="sg-breadcrumbs__logo">
+            <img src="images/home-icon.png" alt="">
+          </div>
+          <div class="sg-breadcrumbs__item">
+            <a class="sg-breadcrumbs__link" href="/">Главная</a>
+          </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link " 
+                href=index.html>
+                  Реестр земельных участков
+            </a>
+            </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link sg-breadcrumbs__link--active" 
+                href=card.html>
+                  Карточка земельного участка
+            </a>
+            </div>
+            
+        </div>
+      </nav>
+    
+    <div class="sg-container">
+      
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/reestr.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Реестр земельных <br> участков</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/process.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Процесс</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/otchet.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Отчётность</p>
+    </div>
+  </a>
+</nav>
+<section class="sg-main-container">
+  <div class="card main-block">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
+        Карточка земельных участков
+      </h1>
+    </div>
+    <form class="header-form">
+      <div class="header-form__item">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Статус</span>
+          <select id="select_status" class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Статус 1</option>
+            <option value="status_2">Статус 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="header-form__item header-form__item--kad">
+        <label class="sg-label" for="">Кадастровый номер</label>
+        <input class="sg-input sg-input--required" type="text">
+      </div>
+      <div class="header-form__item header-form__item--logo">
+        <button class="sg-btn sg-btn-kv">
+          <img src="images/info-icon.png" alt="" class="">
+        </button>
+      </div>
+      <div class="header-form__item header-form__item--long">
+        <label class="sg-label" for="">Местоположение</label>
+        <input class="sg-input sg-input--required" type="text">
+      </div>
+      <div class="header-form__item header-form__item--adress">
+        <label class="sg-label">Адрес</label>
+        <input class="sg-input sg-input--required" type="text" placeholder="Район">
+        <input class="sg-input sg-input--required" type="text" placeholder="Населённый пункт">
+        <input class="sg-input sg-input--required" type="text" placeholder="Улица">
+        <input class="sg-input sg-input--required" type="text" placeholder="Дом">
+      </div>
+    </form>
+    <div id="tabs">
+      <ul class="sg-tabs">
+        <li><a class="sg-tabs__link" href="#fragment-1"><span>Основная информация</span></a></li>
+        <li><a class="sg-tabs__link" href="#fragment-2"><span>Процесс</span></a></li>
+      </ul>
+      <div id="fragment-1">
+        <div class="sg-title-block">
+          <p class="sg-title-block__text">Карта</p>
+          <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+        </div>
+        <div class="map">
+          <img class="map__img" src="images/map-img.png" alt="">
+        </div>
+
+        <div class="sg-title-block">
+          <p class="sg-title-block__text">Основная информация</p>
+          <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+        </div>
+        <div class="main-info">
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Для многодетных семей</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Требуется кадастровый учёт</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">На территории земельного участка есть жилой дом?</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Аренда</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Продажа</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Постоянное (бессрочное пользование)</span>
+            </label>
+          </div>
+          <div class="main-info__check">
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">Безвозмездное пользование</span>
+            </label>
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label" for="">Дата постановки на кадастровый учёт</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label" for="">Площадь</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label-select">
+              <span class="sg-label-select__hint">Наименование участка</span>
+              <select class="sg-menu__select sg-select" name="places">
+                <option></option>
+                <option value="place_1">Участок 1</option>
+                <option value="place_2">Участок 2</option>
+              </select>
+            </label>
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label-select">
+              <span class="sg-label-select__hint">Категория земель</span>
+              <select class="sg-menu__select sg-select" name="place">
+                <option></option>
+                <option value="place_1">Участок 1</option>
+                <option value="place_2">Участок 2</option>
+              </select>
+            </label>
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label" for="">Кадастровая стоимость</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="main-info__item">
+            <label class="sg-label" for="">Первоначальный размер АП</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="main-info__item main-info__item--long">
+            <label class="sg-label" for="">Первоначальный размер рыночной стоимости</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="main-info__item main-info__item--long">
+            <label class="sg-label-select">
+              <span class="sg-label-select__hint">Вид разрешённого использования минэкономразвития</span>
+              <select class="sg-menu__select sg-select" name="place">
+                <option></option>
+                <option value="place_1">Участок 1</option>
+                <option value="place_2">Участок 2</option>
+              </select>
+            </label>
+          </div>
+          <div class="main-info__item main-info__item--long">
+            <label class="sg-label-select">
+              <span class="sg-label-select__hint">Вид разрешенного использования Росреестр</span>
+              <select class="sg-menu__select sg-select" name="place">
+                <option></option>
+                <option value="place_1">Участок 1</option>
+                <option value="place_2">Участок 2</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="sg-title-block">
+          <p class="sg-title-block__text">Ограничения</p>
+          <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+        </div>
+        <div class="limit">
+          <div class="limit__item">
+            <label class="sg-label-select">
+              <span class="sg-label-select__hint">Ви д ограничения</span>
+              <select class="sg-menu__select sg-select" name="place">
+                <option></option>
+                <option value="place_1">Участок 1</option>
+                <option value="place_2">Участок 2</option>
+              </select>
+            </label>
+          </div>
+          <div class="limit__item limit__item--long">
+            <label class="sg-label" for="">Содержание</label>
+            <input class="sg-input" type="text">
+          </div>
+          <div class="limit__item">
+            <label class="sg-label" for="">Территориальная зона</label>
+            <input class="sg-input" type="text">
+          </div>
+          <button class="sg-btn">Добавить</button>
+        </div>
+
+        <div class="sg-title-block">
+          <p class="sg-title-block__text">Коммуникации</p>
+          <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+        </div>
+        <div class="com">
+          <p>Возможность подключения к сети:</p>
+          <div class="main-info">
+            <div class="main-info__check">
+              <label class="toggle toggle--checkbox">
+                <input class="toggle__input" name="in-work" type="checkbox">
+                <span class="toggle__label">Газоснабжение</span>
+              </label>
+            </div>
+            <div class="main-info__check">
+              <label class="toggle toggle--checkbox">
+                <input class="toggle__input" name="in-work" type="checkbox">
+                <span class="toggle__label">Электроснабжение</span>
+              </label>
+            </div>
+            <div class="main-info__check">
+              <label class="toggle toggle--checkbox">
+                <input class="toggle__input" name="in-work" type="checkbox">
+                <span class="toggle__label">Водоснабжение</span>
+              </label>
+            </div>
+          </div>
+          <div class="com__row">
+            <div class="com__textarea">
+              <label class="sg-label">Описание</label>
+              <textarea class="sg-textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="bot-btn">
+            <button class="sg-btn">Сохранить</button>
+            <button class="sg-btn sg-btn--noactive">Отмена</button>
+            <button class="sg-btn sg-btn--noactive">Снять с публикации</button>
+            <button class="sg-btn">Опубликовать</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="sg-process-tab" id="fragment-2">
+        <div class="sg-table-min">
+          <img src="images/table-min-img.png" alt="">
+        </div>
+
+        <div class="sg-steps">
+          <div class="sg-steps__items">
+            <div class="sg-steps__item">
+              <header class="sg-steps__header">
+                <span class="sg-steps__number">1</span>
+                <span class="sg-steps__caption">Утверждение схемы границ земельного участка</span>
+                <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+              </header>
+              <div class="sg-steps__content">
+                <div class="sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sg-steps__item sg-steps__item--green">
+              <header class="sg-steps__header">
+                <span class="sg-steps__number">2</span>
+                <span class="sg-steps__caption">Утверждение схемы границ земельного участка</span>
+                <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+              </header>
+              <div class="sg-steps__content">
+                <div class="sg-steps__put sg-steps__put--green">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sg-steps__item sg-steps__item--blue">
+              <header class="sg-steps__header">
+                <span class="sg-steps__number">3</span>
+                <span class="sg-steps__caption">Утверждение схемы границ земельного участка</span>
+                <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+              </header>
+              <div class="sg-steps__content">
+                <div class="sg-steps__put sg-steps__put--red">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put sg-steps__put--blue">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put sg-steps__put--green">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sg-steps__item sg-steps__item--red">
+              <header class="sg-steps__header">
+                <span class="sg-steps__number">4</span>
+                <span class="sg-steps__caption">Утверждение схемы границ земельного участка</span>
+                <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+              </header>
+              <div class="sg-steps__content">
+                <div class="sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+                <div class="sg-steps__put">
+                  <header class="sg-steps__put-header">
+                    <span class="sg-steps__put-item">стрелка</span>
+                    <span class="sg-steps__put-caption">Подача заявления на оказание услуги</span>
+                    <img class="sg-steps__img" src="images/accordion_arr_up_hov.svg" alt="">
+                  </header>
+                  <div class="sg-steps__put-content">
+                    Способы подачи заявления:,</br>
+                    1. Лично по адресу Администрации.</br>
+                    2. Почтовой связью по адресу Администрации или МФЦ;</br>
+                    3. На бумажном носителе через МФЦ.</br>
+                    4. В электронном виде
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bot-btn">
+          <button class="sg-btn">Завершить процесс</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+    </div>
+    <footer class="sg-footer">
+    </footer>
+</body>
+</html>

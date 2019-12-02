@@ -1,0 +1,142 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/common.js"></script>
+  <title>Госуслуги</title>
+</head>
+<body>
+    <header class="sg-header">
+      <div class="sg-header__container">
+        <a href="/" class="sg-header__logo">
+          <img class="sg-img" src="images/logo-penza.jpg" alt="Госуслуги">
+        </a>
+        <div class="sg-header__user">
+          <a class="sg-link sg-header__link" href="/">Иванов И.И.</a>
+        </div>
+      </div>
+    </header>
+    
+      <nav class="sg-breadcrumbs">
+        <div class="sg-breadcrumbs__container">
+          <div class="sg-breadcrumbs__logo">
+            <img src="images/home-icon.png" alt="">
+          </div>
+          <div class="sg-breadcrumbs__item">
+            <a class="sg-breadcrumbs__link" href="/">Главная</a>
+          </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link sg-breadcrumbs__link--active" 
+                href=services-1.html>
+                  Реестр услуг
+            </a>
+            </div>
+            
+        </div>
+      </nav>
+    
+    <div class="sg-container">
+      
+
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="sg-button sg-hamburger" type="button">
+        <span class="sg-hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/main-info-icon.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Основная информация</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/servises-reestr-icon.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Реестр услуг</p>
+    </div>
+  </a>
+</nav>
+
+<section class="sg-main-container">
+  <div class="main-block sg-services-2">
+    <div class="sg-page-title sg-page-title--btn">
+      <h1 class="sg-title-text">
+        Реестр услуг
+      </h1>
+      <div class="sg-title-btn">
+        <button class="sg-btn">Добавить</button>
+      </div>
+    </div>
+
+    <div class="sg-sg-form">
+      <div class="sg-form__item sg-form__item--status">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Статус</span>
+          <select class="sg-menu__select sg-select" name="places">
+            <option></option>
+            <option value="place_1">Значение 1</option>
+            <option value="place_2">Значение 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--type">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Вид услуги</span>
+          <select class="sg-menu__select sg-select" name="places">
+            <option></option>
+            <option value="place_1">Значение 1</option>
+            <option value="place_2">Значение 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--price">
+        <label class="sg-label">Стоимость</label>
+        <input class="sg-input" type="text" placeholder="От">
+        <input class="sg-input" type="text" placeholder="До">
+      </div>
+    </div>
+
+    <div class="sg-btn-block">
+      <div class="sg-left-block">
+        <button class="sg-btn">Принять</button>
+        <button class="sg-btn">Сбросить</button>
+      </div>
+    </div>
+
+    <img class="sg-table-img" src="images/table-img.png" alt="">
+    
+    
+  </div>
+</section>
+
+    </div>
+    <footer class="sg-footer">
+    </footer>
+</body>
+</html>

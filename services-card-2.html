@@ -1,0 +1,229 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/common.js"></script>
+  <title>Госуслуги</title>
+</head>
+<body>
+    <header class="sg-header">
+      <div class="sg-header__container">
+        <a href="/" class="sg-header__logo">
+          <img class="sg-img" src="images/logo-penza.jpg" alt="Госуслуги">
+        </a>
+        <div class="sg-header__user">
+          <a class="sg-link sg-header__link" href="/">Иванов И.И.</a>
+        </div>
+      </div>
+    </header>
+    
+      <nav class="sg-breadcrumbs">
+        <div class="sg-breadcrumbs__container">
+          <div class="sg-breadcrumbs__logo">
+            <img src="images/home-icon.png" alt="">
+          </div>
+          <div class="sg-breadcrumbs__item">
+            <a class="sg-breadcrumbs__link" href="/">Главная</a>
+          </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link " 
+                href=services-1.html>
+                  Реестр услуг
+            </a>
+            </div>
+            
+            <div class="sg-breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="sg-breadcrumbs__item">
+              <a 
+                class="sg-breadcrumbs__link sg-breadcrumbs__link--active" 
+                href=services-1.html>
+                  Карточка услуги
+            </a>
+            </div>
+            
+        </div>
+      </nav>
+    
+    <div class="sg-container">
+      
+
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="sg-button sg-hamburger" type="button">
+        <span class="sg-hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/main-info-icon.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Основная информация</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/servises-reestr-icon.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Реестр услуг</p>
+    </div>
+  </a>
+</nav>
+
+<section class="sg-main-container">
+  <div class="main-block sg-services-card">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
+        Карточка услуги
+      </h1>
+    </div>
+
+    <div class="sg-title-block">
+      <p class="sg-title-block__text">Информация об организации</p>
+      <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="sg-sg-form">
+      <div class="sg-form__item sg-form__item--alone">
+        <label class="sg-label" for="">Наименование организации</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--tel">
+        <label class="sg-label" for="">Телефон</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--four">
+        <label class="sg-label" for="">Адрес</label>
+        <input class="sg-input" type="text" placeholder="Район">
+        <input class="sg-input" type="text" placeholder="Населённый пункт">
+        <input class="sg-input" type="text" placeholder="Улица">
+        <input class="sg-input" type="text" placeholder="Дом">
+      </div>
+      <div class="sg-form__item sg-form__item--area">
+        <label class="sg-label">Описание</label>
+        <textarea class="sg-textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <div class="sg-title-block">
+      <p class="sg-title-block__text">Информация об услуге</p>
+      <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="sg-sg-form">
+      <div class="sg-form__item">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Статус</span>
+          <select class="sg-menu__select sg-select" name="place">
+            <option></option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Вид услуги</span>
+          <select class="sg-menu__select sg-select" name="place">
+            <option></option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--checkbox">
+        <label class="toggle toggle--checkbox">
+          <input class="toggle__input" name="in-work" type="checkbox">
+          <span class="toggle__label">Указать диапазон</span>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--toogle">
+        <label class="sg-label">Стоимость</label>
+        <input class="sg-input" type="text" placeholder="">
+      </div>
+      <div class="sg-form__item sg-form__item--double sg-form__item--inv">
+        <label class="sg-label">Стоимость</label>
+        <input class="sg-input" type="text" placeholder="От">
+        <input class="sg-input" type="text" placeholder="До">
+      </div>
+      <div class="sg-form__item sg-form__item--area">
+        <label class="sg-label" for="">Краткое описание услуги</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--area">
+        <label class="sg-label" for="">Описание услуги</label>
+        <textarea class="sg-textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="sg-form__item sg-form__item--area">
+        <label class="sg-label" for="">Комментарий от модератора</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--area">
+        <label class="sg-label">Описание услуги</label>
+        <textarea class="sg-textarea sg-textarea--required" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Текст</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Дата</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Дата и время</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Текст</label>
+        <input class="sg-input sg-input--required" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Дата</label>
+        <input class="sg-input sg-input--required" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Дата и время</label>
+        <input class="sg-input sg-input--required" type="text">
+      </div>
+    </div>
+
+    <div class="sg-btn-block">
+      <button class="sg-btn">Сохранить</button>
+      <button class="sg-btn">Сохранить и отправить на модерацию</button>
+      <button class="sg-btn sg-btn--noactive">Отмена</button>
+    </div>
+
+  </div>
+</section>
+
+
+    </div>
+    <footer class="sg-footer">
+    </footer>
+</body>
+</html>
